@@ -1,79 +1,58 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# NOTY
 
-# Getting Started
+NOTY is a React Native app that allows users to create folders, add files, manage notes, to-do lists, audio recordings, images, and documents. The app supports light and dark modes and utilizes SQLite for data storage.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- Create folders with a name, icon, and color.
+- Edit folder properties such as color, icon, or name.
+- Remove folders.
+- Add files with a title, description, and color.
+- Edit file properties such as color, title, or description.
+- Remove files.
+- Notes feature:
+  - Add text notes with a title, details, and optional border.
+  - Edit or remove text notes.
+- To-do list feature:
+  - Add, edit, or remove tasks.
+  - Check or uncheck tasks as completed.
+- Audio feature:
+  - Add audio recordings with a title and optional border.
+  - Play, pause, resume, and scroll audio recordings.
+  - Edit or remove audio recordings.
+- Image feature:
+  - Add images with a title, description, and optional border.
+  - Edit or remove images, including title and description.
+- Document feature:
+  - Add documents with file extensions such as PPT, PPTX, DOC, DOCX, and PDF.
+  - View, edit, or remove documents.
+- Dark and light mode:
+  - Automatically detects the default mode of the device.
+  - Allows users to switch between light and dark modes.
+- Search functionality:
+  - Search for folders, files, or text within notes.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Libraries Used
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- [react-native-async-storage/async-storage](https://github.com/react-native-async-storage/async-storage) - Asynchronous storage library for React Native.
+- [react-navigation/native](https://github.com/react-navigation/react-navigation) - Routing and navigation library for React Native apps.
+- [react-navigation/native-stack](https://github.com/react-navigation/react-navigation) - Stack navigator for React Navigation.
+- [react-native-document-picker](https://github.com/react-native-document-picker/react-native-document-picker) - Document picker for React Native.
+- [react-native-elements](https://github.com/react-native-elements/react-native-elements) - UI component library for React Native.
+- [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) - Icon library for React Native.
+- [react-native-track-player](https://github.com/react-native-kit/react-native-track-player) - Audio playback library for React Native.
+- [react-native-sqlite-storage](https://github.com/andpor/react-native-sqlite-storage) - SQLite storage library for React Native.
+- [react-native-share](https://github.com/react-native-share/react-native-share) - Share API for React Native.
+- [react-native-screens](https://github.com/software-mansion/react-native-screens) - Native navigation primitives for React Native.
+- [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context) - Safe area insets library for React Native.
 
-```bash
-# using npm
-npm start
+## Permissions
 
-# OR using Yarn
-yarn start
-```
+The app requires the following permission:
 
-## Step 2: Start your Application
+- Access to audios, images, and documents to store them in the database.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Installation
 
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+1. Clone the repository.
+2. Install the dependencies by running the following command:
